@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <center>
+        <h1>
+            Welcome To My Exclusive Car Store!
+        </h1>
+        <h2>
+            Here, you can find a variety of cars to purchase
+        </h2>
+    </center>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form id="store" action="customerBackend.php" method="post" onsubmit="return validate()">
+        <div class="Cars">
+            <image
+                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/my21-camry-xle-001-1594757458.jpg?crop=0.639xw:0.639xh;0.139xw,0.204xh&resize=640:*">
+            </image>
+            <figcaption> <label> 2021 Toyota Camry: $1000</label><br> </figcaption>
+            <p>Quantity: <input type="number" name="Car1" id="Car1" min="0" size="1" required></p>
+        </div>
+
+        <div class="Cars">
+            <image
+                src="https://www.nissanusa.com/content/dam/Nissan/us/vehicles/altima/2022/overview/2022-nissan-altima.jpg">
+            </image>
+            <figcaption> <label> 2022 Nissan Altima: $1500</label><br> </figcaption>
+            <p>Quantity: <input type="number" name="Car2" id="Car2" min="0" size="1" required></p>
+        </div>
+
+        <div class="Cars">
+            <image
+                src="http://storage.googleapis.com/www.savvydealer.com/new/Chevrolet/Suburban/All-Trims/2014/Main/2014-Chevrolet-Suburban.jpg">
+            </image>
+            <figcaption> <label> 2014 Chevrolet Suburban: $2000</label><br> </figcaption>
+            <p>Quantity: <input type="number" name="Car3" id="Car3" min="0" size="1" required></p>
+        </div>
+
+        <div class="shipping">
+            <h3>Shipping Options:</h3>
+            <input name="choice" type="radio" value="7days" id="7days"> Free 7 day
+            <input name="choice" type="radio" value="overnight" id="overnight"> $50.00 over night
+            <input name="choice" type="radio" value="3days" id="3days"> $5.00 three day
+        </div>
+
+        <div class="customer">
+            <h3>Login</h3>
+            <label>Username:</label>
+            <input type="email" class="onlineid" name="onlineid" id="onlineid" required>
+            <br></br><label>Password:</label>
+            <input type="password" class="passcode" name="passcode" id="passcode" required minlength="1">
+            <br></br>
+            <input type="submit" value="Submit">
+
+        </div>
+
+        <input type="reset" value="Reset">
+    </form>
+
+    <script src="./formChecker.js"></script>
+</body>
+
+</html>
